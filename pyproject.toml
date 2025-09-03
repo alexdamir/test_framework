@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "test-framework"
+version = "0.1.0"
+description = "BDD Test Framework using Playwright, Behave, and Poetry"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "features"}, {include = "tests"}, {include = "config"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+playwright = "^1.40.0"
+behave = "^1.2.6"
+pytest = "^7.4.0"
+pytest-playwright = "^0.4.3"
+allure-behave = "^2.13.2"
+pydantic = "^2.5.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.8.0"
+pre-commit = "^3.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.behave]
+paths = ["features"]
+format = ["pretty", "json:reports/behave-report.json"]
+junit = true
+junit_directory = "reports"
+show_timings = true
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
