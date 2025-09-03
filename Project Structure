@@ -1,0 +1,37 @@
+test_framework/
+├── pyproject.toml
+├── README.md
+├── .gitignore
+├── features/
+│   ├── environment.py
+│   ├── steps/
+│   │   ├── __init__.py
+│   │   ├── common_steps.py
+│   │   ├── login_steps.py
+│   │   └── navigation_steps.py
+│   ├── support/
+│   │   ├── __init__.py
+│   │   ├── browser_manager.py
+│   │   ├── config.py
+│   │   ├── helpers.py
+│   │   └── page_objects/
+│   │       ├── __init__.py
+│   │       ├── base_page.py
+│   │       ├── login_page.py
+│   │       └── dashboard_page.py
+│   ├── login.feature
+│   └── navigation.feature
+├── tests/
+│   ├── __init__.py
+│   ├── unit/
+│   │   └── __init__.py
+│   └── integration/
+│       └── __init__.py
+├── reports/
+│   └── .gitkeep
+├── screenshots/
+│   └── .gitkeep
+└── config/
+    ├── __init__.py
+    ├── settings.py
+    └── test_data.json
