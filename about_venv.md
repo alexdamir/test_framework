@@ -1,5 +1,3 @@
-Great question! With Poetry, you don't need to manually create and manage virtual environments - Poetry handles this automatically. However, let me explain the full workflow and when virtual environments come into play:
-
 ## Poetry's Automatic Virtual Environment Management
 
 **Poetry automatically creates and manages virtual environments for you:**
