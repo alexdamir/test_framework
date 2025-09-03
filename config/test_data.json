@@ -1,0 +1,22 @@
+{
+  "users": {
+    "valid_user": {
+      "username": "testuser",
+      "password": "testpass"
+    },
+    "admin_user": {
+      "username": "admin",
+      "password": "adminpass"
+    }
+  },
+  "urls": {
+    "login": "/login",
+    "dashboard": "/dashboard",
+    "profile": "/profile"
+  },
+  "timeouts": {
+    "short": 5000,
+    "medium": 10000,
+    "long": 30000
+  }
+}
